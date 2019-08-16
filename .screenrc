@@ -1,0 +1,25 @@
+shell -$SHELL
+
+# Close start message
+startup_message off
+
+caption always "%{=u .k} %-w%<%{=u .y}%n %t%{=u .k}%+w "
+hardstatus alwaysignore
+hardstatus alwayslastline "%{= .r} [%l]%<%=%{= .b}$USER%{= .c}@%H %=%{= .m} %Y/%m/%d%{= .m} %0c "
+
+# Set default encoding using utf8
+defutf8 on
+
+# Disable vbell
+vbell off
+
+# Bind keys
+bindkey "^z" next
+bindkey -k k1 screen
+bindkey -k k2 kill
+bindkey -k k3 title
+bindkey -k k4 copy
+bindkey -k k5 prev
+bindkey -k k6 next
+bindkey -k k7 focus
+
