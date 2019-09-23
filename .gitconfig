@@ -1,0 +1,17 @@
+# ~/.gitconfig
+
+[alias]
+    co = checkout
+    ci = commit
+    br = branch
+    s = status -s
+    l = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+[color]
+    ui = true
+    
+[push]
+    default = matching
+[user]
+    email = lenchen.ckl@gmail.com
+
